@@ -2,7 +2,7 @@ import './App.css';
 // import DivAndConquer from './components/DivAndConquer';
 // import CollectOddValues from './components/CollectOddValues';
 // import BinarySearch from './components/BinarySearch';
-import NaiveStringSearchDisplay from './NaiveStringSearchDisplay';
+import NaiveStringSearchDisplay from './components/NaiveStringSearchDisplay';
 
 // let myArray = [1,2,3,4,5];
 let long = 'bukkene bruse blei brisne på rusbrus';

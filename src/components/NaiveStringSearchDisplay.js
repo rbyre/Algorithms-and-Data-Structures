@@ -14,6 +14,10 @@ export default function NaiveStringSearchDisplay(props) {
     return (
         <div>
             <h1>String Search</h1>
+            <h2>Text: </h2>
+            <p>{long}</p>  
+            <h2>Søkeord:</h2>
+            <p>{short}</p>
             <button onClick={startStringSearch}>start</button>
             <h2>count: {count}</h2>
         </div>
