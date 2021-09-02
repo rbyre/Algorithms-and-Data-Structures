@@ -1,4 +1,6 @@
 import React, {Component} from 'react';
+import { Link } from 'react-router-dom';
+import { Container } from 'react-bootstrap';
 
 
 const alg = `search(array, val) {
@@ -52,7 +54,7 @@ class DivAndConquer extends Component {
     
     render() {
         return (
-            <div className="DivideAndConquer">
+            <Container className="DivideAndConquer">
                 <h1>Divide and Conquer</h1>
                 <p>Given a sorted array of integers, write a function called search, that accepts a value and returns the index where the value passed to the funtion is located. If the value is not found, return -1</p>
                 <div className="BinarySearch">
@@ -65,8 +67,9 @@ class DivAndConquer extends Component {
                     
                     <textarea readOnly cols={50} rows={25} >{alg}</textarea>
                     </div>
+                    <Link to="/">Home</Link>
                 </div>
-            </div>
+            </Container>
         );
     }
 }
