@@ -6,6 +6,9 @@ import "./basic.css";
 // import {LinkContainer} from 'react-router-bootstrap';
 
 import selectionSort from "./selectionSort";
+import code from './code';
+const alg = code.selectionSort;
+
 
 const SelectionSortDisplay = (props) => {
   const [list, setList] = useState(props.unsortedArray);
@@ -27,7 +30,8 @@ const SelectionSortDisplay = (props) => {
             Listen blir sortert med 'Selectionsort' algoritmen
           </Card.Subtitle>
           <Card.Text>
-            
+          Big O: O(n^2)
+          <textarea className='textarea'>{alg}</textarea>
           </Card.Text>
           <Card.Text>
             {text}: {list.map((item) => item + " ")}
@@ -43,4 +47,7 @@ const SelectionSortDisplay = (props) => {
     </div>
   );
 };
+
+
+
 export default SelectionSortDisplay;

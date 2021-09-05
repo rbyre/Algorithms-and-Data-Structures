@@ -3,11 +3,13 @@ import { Link } from "react-router-dom";
 import { Card, Button } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./basic.css";
-// import {LinkContainer} from 'react-router-bootstrap';
+import code from './code';
 
-import bubbleSort from "./bubbleSort";
+import insertionSort from "./insertionSort";
 
-const BubbleSortDisp = (props) => {
+const alg = code.insertionSort;
+
+const InsertionSortDisp = (props) => {
   const [list, setList] = useState(props.unsortedArray);
   const [text, setText] = useState("Usortert");
 
@@ -15,18 +17,23 @@ const BubbleSortDisp = (props) => {
 
   const sortArray = () => {
     setText("Sortert");
-    setList(bubbleSort(original));
+    setList(insertionSort(original));
   };
 
   return (
       <div className="basic">
 
-    <Card  style={{ width: '18rem' }}>
+    <Card  >
       <Card.Body>
-        <Card.Title>BubbleSort</Card.Title>
+        <Card.Title>InsertionSort</Card.Title>
         <Card.Subtitle>
-          Listen blir sortert med 'Bubblesort' algoritmen
+          Listen blir sortert med 'InsertionSort' algoritmen Big O: O(n^2). 
+          
         </Card.Subtitle>
+        <Card.Text>
+        
+        <textarea className='textarea'>{alg}</textarea>
+        </Card.Text>
         <Card.Text>
           {text}: {list.map((item) => item + " ")}
         </Card.Text>
@@ -41,4 +48,4 @@ const BubbleSortDisp = (props) => {
       </div>
   );
 };
-export default BubbleSortDisp;
+export default InsertionSortDisp;

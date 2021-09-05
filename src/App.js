@@ -8,6 +8,7 @@ import BinarySearch from './components/BinarySearch';
 import NaiveStringSearchDisplay from './components/NaiveStringSearchDisplay';
 import BubbleSortDisp from './components/BubbleSortDisp';
 import SelectionSortDisplay from './components/selectionSortDisplay';
+import InsertionSortDisplay from './components/InsertionSortDisplay';
 
 
 let myArray = [1,2,3,4,5];
@@ -33,6 +34,9 @@ function App() {
         </Route>
         <Route exact path="/selectionSort">
         <SelectionSortDisplay unsortedArray={unsortedArray} />
+        </Route>
+        <Route exact path="/insertionSort">
+        <InsertionSortDisplay unsortedArray={unsortedArray} />
         </Route>
       </Switch>
       {/* <CollectOddValues arr={myArray} /> */}
