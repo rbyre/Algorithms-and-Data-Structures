@@ -9,7 +9,7 @@ import NaiveStringSearchDisplay from './components/NaiveStringSearchDisplay';
 import BubbleSortDisp from './components/BubbleSortDisp';
 import SelectionSortDisplay from './components/selectionSortDisplay';
 import InsertionSortDisplay from './components/InsertionSortDisplay';
-
+import MergeSortDisplay from './components/MergeSortDisplay';
 
 let myArray = [1,2,3,4,5];
 let long = 'bukkene bruse blei brisne på rusbrus';
@@ -37,6 +37,9 @@ function App() {
         </Route>
         <Route exact path="/insertionSort">
         <InsertionSortDisplay unsortedArray={unsortedArray} />
+        </Route>
+        <Route exact path="/mergesort">
+        <MergeSortDisplay unsortedArray={unsortedArray} />
         </Route>
       </Switch>
       {/* <CollectOddValues arr={myArray} /> */}

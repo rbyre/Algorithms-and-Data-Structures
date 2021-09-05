@@ -33,6 +33,9 @@ const Home = () => {
               <Dropdown.Item href="#/action-5">
                 <Link to="/insertionsort">InsertionSort</Link>
               </Dropdown.Item>
+              <Dropdown.Item href="#/action-6">
+                <Link to="/mergesort">MergeSort</Link>
+              </Dropdown.Item>
             </Dropdown.Menu>
           </Dropdown>
         </Row>
