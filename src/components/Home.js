@@ -7,8 +7,15 @@ const Home = () => {
   return (
     <Container className="d-flex justify-content-center align-items-center">
       <Col className="text-center" >
+        <nav>
+          <ul>
+            <li><a href="#">PATTERNS</a></li>
+            <li><a href="#">SEARCH</a></li>
+            <li><a href="#">SORTING</a></li>
+            <li><a href="#">DATA STRUCTURES</a></li>
+          </ul>
+        </nav>
         <h1>JavaScript Algorithms and Data Structures</h1>
-
         <Image
           src="https://images.unsplash.com/photo-1518770352423-dce09a3d3307?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=667&q=80"
           rounded
@@ -19,27 +26,27 @@ const Home = () => {
               Velg fra listen
             </Dropdown.Toggle>
 
-            <Dropdown.Menu>
+            <Dropdown.Menu className="dropdownmenu">
               <Dropdown.Item href="#/action-1">
-                <Link to="/divandconquer">Divide and Conquer Algorithm</Link>
+                <Link className="link" to="/divandconquer">Divide and Conquer Algorithm</Link>
               </Dropdown.Item>
               <Dropdown.Item href="#/action-2">
-                <Link to="/stringSearch">String Search</Link>
+                <Link className="link" to="/stringSearch">String Search</Link>
               </Dropdown.Item>
               <Dropdown.Item href="#/action-3">
-                <Link to="/bubblesort">BubbleSort</Link>
+                <Link className="link" to="/bubblesort">BubbleSort</Link>
               </Dropdown.Item>
               <Dropdown.Item href="#/action-4">
-                <Link to="/selectionsort">SelectionSort</Link>
+                <Link className="link" to="/selectionsort">SelectionSort</Link>
               </Dropdown.Item>
               <Dropdown.Item href="#/action-5">
-                <Link to="/insertionsort">InsertionSort</Link>
+                <Link className="link" to="/insertionsort">InsertionSort</Link>
               </Dropdown.Item>
               <Dropdown.Item href="#/action-6">
-                <Link to="/mergesort">MergeSort</Link>
+                <Link className="link" to="/mergesort">MergeSort</Link>
               </Dropdown.Item>
               <Dropdown.Item href="#/action-7">
-                <Link to="/quicksort">QuickSort</Link>
+                <Link className="link" to="/quicksort">QuickSort</Link>
               </Dropdown.Item>
             </Dropdown.Menu>
           </Dropdown>
