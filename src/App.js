@@ -10,11 +10,12 @@ import BubbleSortDisp from './components/BubbleSortDisp';
 import SelectionSortDisplay from './components/selectionSortDisplay';
 import InsertionSortDisplay from './components/InsertionSortDisplay';
 import MergeSortDisplay from './components/MergeSortDisplay';
+import QuickSortDisplay from './components/QuickSortDisplay';
 
 let myArray = [1,2,3,4,5];
-let long = 'bukkene bruse blei brisne på rusbrus';
-let short = 'brus';
-let unsortedArray = [109,37,45,29,8];
+let long = 'ein fiskar fiskar fiskar';
+let short = 'fiskar';
+let unsortedArray = [109,108,37,107,45,106,29,105,94,8,93];
 
 function App() {
   return (
@@ -29,6 +30,9 @@ function App() {
         <Route exact path="/divandconquer">
           <DivAndConquer />
         </Route>
+        <Route exact path="/stringSearch">
+        <NaiveStringSearchDisplay long={long} short={short}/>
+        </Route>
         <Route exact path="/bubblesort">
         <BubbleSortDisp unsortedArray={unsortedArray} />
         </Route>
@@ -40,6 +44,9 @@ function App() {
         </Route>
         <Route exact path="/mergesort">
         <MergeSortDisplay unsortedArray={unsortedArray} />
+        </Route>
+        <Route exact path="/quicksort">
+        <QuickSortDisplay unsortedArray={unsortedArray} />
         </Route>
       </Switch>
       {/* <CollectOddValues arr={myArray} /> */}

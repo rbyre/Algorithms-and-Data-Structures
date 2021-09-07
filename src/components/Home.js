@@ -23,7 +23,9 @@ const Home = () => {
               <Dropdown.Item href="#/action-1">
                 <Link to="/divandconquer">Divide and Conquer Algorithm</Link>
               </Dropdown.Item>
-              <Dropdown.Item href="#/action-2">Another action</Dropdown.Item>
+              <Dropdown.Item href="#/action-2">
+                <Link to="/stringSearch">String Search</Link>
+              </Dropdown.Item>
               <Dropdown.Item href="#/action-3">
                 <Link to="/bubblesort">BubbleSort</Link>
               </Dropdown.Item>
@@ -35,6 +37,9 @@ const Home = () => {
               </Dropdown.Item>
               <Dropdown.Item href="#/action-6">
                 <Link to="/mergesort">MergeSort</Link>
+              </Dropdown.Item>
+              <Dropdown.Item href="#/action-7">
+                <Link to="/quicksort">QuickSort</Link>
               </Dropdown.Item>
             </Dropdown.Menu>
           </Dropdown>

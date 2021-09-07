@@ -5,11 +5,11 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "./basic.css";
 import code from './code';
 
-import mergeSort from "./mergeSort";
+import quickSort from "./quickSort";
 
-const alg = code.mergeSort;
+const alg = code.quickSort;
 
-const MergeSortDisplay = (props) => {
+const QuickSortDisplay = (props) => {
   const [list, setList] = useState(props.unsortedArray);
   const [text, setText] = useState("Usortert");
 
@@ -17,7 +17,7 @@ const MergeSortDisplay = (props) => {
 
   const sortArray = () => {
     setText("Sortert");
-    setList(mergeSort(original));
+    setList(quickSort(original));
   };
 
   return (
@@ -25,9 +25,9 @@ const MergeSortDisplay = (props) => {
 
     <Card  >
       <Card.Body>
-        <Card.Title>MergeSort</Card.Title>
+        <Card.Title>QuickSort</Card.Title>
         <Card.Subtitle>
-          Listen blir sortert med 'MergeSort' algoritmen Big O: O(nlog(n)). 
+          Listen blir sortert med 'QuickSort' algoritmen Big O: O(nlog(n)). 
           
         </Card.Subtitle>
         <Card.Text>
@@ -48,4 +48,4 @@ const MergeSortDisplay = (props) => {
       </div>
   );
 };
-export default MergeSortDisplay;
+export default QuickSortDisplay;
