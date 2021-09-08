@@ -9,10 +9,10 @@ const Home = () => {
       <Col className="text-center" >
         <nav>
           <ul>
-            <li><a href="#">PATTERNS</a></li>
-            <li><a href="#">SEARCH</a></li>
-            <li><a href="#">SORTING</a></li>
-            <li><a href="#">DATA STRUCTURES</a></li>
+            <li><Link to="/testpage">PATTERNS</Link></li>
+            <li><Link to="/testpage">SEARCHING</Link></li>
+            <li><Link to="/testpage">SORTING</Link></li>
+            <li><Link to="/testpage">DATA STRUCTURES</Link></li>
           </ul>
         </nav>
         <h1>JavaScript Algorithms and Data Structures</h1>
@@ -47,6 +47,9 @@ const Home = () => {
               </Dropdown.Item>
               <Dropdown.Item href="#/action-7">
                 <Link className="link" to="/quicksort">QuickSort</Link>
+              </Dropdown.Item>
+              <Dropdown.Item href="#/action-8">
+                <Link className="link" to="/radixsort">RadixSort</Link>
               </Dropdown.Item>
             </Dropdown.Menu>
           </Dropdown>

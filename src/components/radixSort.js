@@ -26,6 +26,8 @@ function radixSort (arr) {
             let digit = getDigit(arr[i], k);
             digitBuckets[digit].push(arr[i]);
         }
+
+        arr = [].concat(...digitBuckets);
     }
 
 

@@ -11,6 +11,8 @@ import SelectionSortDisplay from './components/selectionSortDisplay';
 import InsertionSortDisplay from './components/InsertionSortDisplay';
 import MergeSortDisplay from './components/MergeSortDisplay';
 import QuickSortDisplay from './components/QuickSortDisplay';
+import RadixSortDisplay from './components/RadixSortDisplay';
+import TestPage from './components/TestPage';
 
 let myArray = [1,2,3,4,5];
 let long = 'ein fiskar fiskar fiskar';
@@ -47,6 +49,12 @@ function App() {
         </Route>
         <Route exact path="/quicksort">
         <QuickSortDisplay unsortedArray={unsortedArray} />
+        </Route>
+        <Route exact path="/radixsort">
+        <RadixSortDisplay unsortedArray={unsortedArray} />
+        </Route>
+        <Route exact path="/testpage">
+        <TestPage />
         </Route>
       </Switch>
       {/* <CollectOddValues arr={myArray} /> */}
