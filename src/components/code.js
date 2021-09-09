@@ -1,4 +1,45 @@
 const code = {
+    naivestringsearch: 
+    `const NaiveStringSearch = (longString, shortString) => {
+        let count = 0;
+        for (let i = 0; i < longString.length; i++) {
+            for (let j = 0; j < shortString.length; j++) {
+                console.log(shortString[j], longString[i+j]);
+                if (longString[i+j] !== shortString[j]) {
+                    console.log('BREAK!');
+                    break;
+                }
+                if (j === shortString.length - 1) {
+                    console.log('FANT EIN!');
+                    count++;
+                }
+            }
+        }
+        return count;
+    }
+    `,
+    divideandconquer: 
+    `search(array, val) {
+        let min = 0;
+        let max = array.length - 1;
+    
+        while (min <= max) {
+            let middle = Math.floor((min+max) /2);
+            let currentElement = array[middle];
+    
+            if(array[middle] < val) {
+                min = middle + 1;
+            }
+            else if (array[middle] > val) {
+                max = middle -1;
+            }
+            else {
+                return middle;
+            }
+        }
+    
+        return -1;
+    }`,
     selectionSort: 
     `function selectionSort(arr){
         const swap = (arr, idx1, idx2) =>
